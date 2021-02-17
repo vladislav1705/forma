@@ -1,0 +1,13 @@
+<h1>Dobavit contact</h1>
+<%=form_for :contact, url: contacts_path   do |f| %>
+  <p>naimenovanie contacta</p>
+  <%=f.text_field :name %><br>
+
+  <p>Email contacta</p>
+  <%=f.text_field :email %><br>
+
+  <p>comentariy contacta</p>
+  <%=f.text_area :comment %>
+
+  <%=f.submit %>
+  <%end%>
